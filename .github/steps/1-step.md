@@ -1,6 +1,6 @@
 ## Step 1: Plan the delivery and write failing tests
 
-<img width="800" alt="Exercise 3 of 4 of the Spec-Driven Delivery workshop: Deliver an Approved Behavior with Copilot. Go from failing tests to a merged, archived change, with a person at every gate. Tools: Codespaces, GitHub Copilot, OpenSpec and Gherkin. Focus of this exercise: Scenario, Code and Evidence." src="../images/banner.png">
+<img width="800" alt="Exercise 3 of 4 of the Spec-Driven Delivery workshop: Deliver an Approved Behavior with Copilot. Go from failing tests to a merged, archived change, with a person at every gate. Tools: Codespaces, GitHub Copilot, OpenSpec and Gherkin. Focus of this exercise: Scenario, Code and Evidence." src="https://github.com/acworkma/skills-spec-driven-deliver-a-behavior/blob/main/.github/images/banner.png?raw=true">
 
 Welcome back to the Contoso Health Plan delivery team, @{{ login }}! :wave: Subscribers on a family plan can see the claims of their dependents in the member portal, but some claims must stay private. The product owner and the privacy lead approved the change `implement-dependent-privacy`, and today your team delivers it with Copilot. Before anyone writes code, you need to know which test will prove each approved scenario.
 
@@ -8,7 +8,7 @@ Welcome back to the Contoso Health Plan delivery team, @{{ login }}! :wave: Subs
 
 **Test-first** delivery starts from approved scenarios, not from code. A **delivery plan** maps each scenario ID to the code that will change and the test that will prove it, and a person reviews that plan against the spec before coding starts: AI drafts, humans decide. The new tests must fail against the unfinished code. This failing state is called **red**, and it shows that the tests really call the code. In [Agent mode](https://code.visualstudio.com/docs/agents/run/chat-view), Copilot Chat can create and edit files and run commands, so every prompt states what Copilot may change and what it must leave alone.
 
-<img width="800" alt="Deliver an approved behavior: five stages in a row. Stage 1, Plan: red tests, reviewed plan, marked Human check and You are here. Stage 2, Implement: make the tests pass. Stage 3, Pull request: CI checks every change. Stage 4, Archive: update the living spec. Stage 5, Merge: a person approves, marked Human check." src="../images/delivery-flow-1.png">
+<img width="800" alt="Deliver an approved behavior: five stages in a row. Stage 1, Plan: red tests, reviewed plan, marked Human check and You are here. Stage 2, Implement: make the tests pass. Stage 3, Pull request: CI checks every change. Stage 4, Archive: update the living spec. Stage 5, Merge: a person approves, marked Human check." src="https://github.com/acworkma/skills-spec-driven-deliver-a-behavior/blob/main/.github/images/delivery-flow-1.png?raw=true">
 
 | What | Where it lives in this repository |
 | --- | --- |
@@ -64,7 +64,7 @@ Set up your computer once with the workshop's [local setup guide](https://github
 
    > ⏳ **Wait:** You are ready when the bottom-left corner of the editor shows **Codespaces** followed by your codespace's name.
 
-   <img width="400" alt="The bottom-left corner of the editor's Status Bar showing Codespaces followed by a generated codespace name" src="../images/codespaces-status.png">
+   <img width="400" alt="The bottom-left corner of the editor's Status Bar showing Codespaces followed by a generated codespace name" src="https://github.com/acworkma/skills-spec-driven-deliver-a-behavior/blob/main/.github/images/codespaces-status.png?raw=true">
 
 1. Open a terminal with `` Ctrl+` `` (also on Mac), or from the menu (☰) at the top left with **Terminal** > **New Terminal**. Then create the branch for this delivery.
 
@@ -79,7 +79,7 @@ Set up your computer once with the workshop's [local setup guide](https://github
 
 - **No terminal is visible:** In the panel at the bottom of the editor, select the **TERMINAL** tab. If there is no panel, press `` Ctrl+` `` (also on Mac), or use **Terminal** > **New Terminal**.
 
-  <img width="460" alt="The editor's bottom panel with the TERMINAL tab selected, next to PROBLEMS, OUTPUT, DEBUG CONSOLE and PORTS" src="../images/terminal-tab.png">
+  <img width="460" alt="The editor's bottom panel with the TERMINAL tab selected, next to PROBLEMS, OUTPUT, DEBUG CONSOLE and PORTS" src="https://github.com/acworkma/skills-spec-driven-deliver-a-behavior/blob/main/.github/images/terminal-tab.png?raw=true">
 
 - **The codespace opened the original exercise:** Close that tab and use the button above, which points to your copy. You can also start one from your repository page: **Code** > **Codespaces** > **Create codespace on main**.
 
@@ -97,7 +97,7 @@ Copilot drafts the plan; you decide whether it is good enough to build from. The
 
 1. Open Copilot Chat: select the chat icon at the top of the editor, or press `Ctrl+Alt+I` (`Ctrl+Cmd+I` on Mac). Set the mode to **Agent** in the chat box.
 
-   <img width="440" alt="The Copilot Chat mode picker open above the chat box, with Agent highlighted above Ask and Plan" src="../images/copilot-agent-mode.png">
+   <img width="440" alt="The Copilot Chat mode picker open above the chat box, with Agent highlighted above Ask and Plan" src="https://github.com/acworkma/skills-spec-driven-deliver-a-behavior/blob/main/.github/images/copilot-agent-mode.png?raw=true">
 
    Then ask Copilot for a plan. The last sentences of the prompt keep it away from the code.
 
@@ -120,7 +120,7 @@ Copilot drafts the plan; you decide whether it is good enough to build from. The
 
 1. Copilot lists the files it changed above the chat box. Select **Keep** to accept `delivery/plan.md`.
 
-   <img width="420" alt="The Copilot Chat panel listing two changed files above the chat box, with the Keep and Undo buttons highlighted" src="../images/copilot-keep-changes.png">
+   <img width="420" alt="The Copilot Chat panel listing two changed files above the chat box, with the Keep and Undo buttons highlighted" src="https://github.com/acworkma/skills-spec-driven-deliver-a-behavior/blob/main/.github/images/copilot-keep-changes.png?raw=true">
 
    Then open `delivery/plan.md` next to the spec and review it as the human gate:
 

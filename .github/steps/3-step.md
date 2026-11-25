@@ -6,7 +6,7 @@ Your code is green in your terminal, @{{ login }}. :green_circle: But "it passes
 
 [Continuous integration (CI)](https://docs.github.com/en/actions/about-github-actions/about-continuous-integration-with-github-actions) runs the same checks on a clean machine every time a pull request changes. This repository's `CI` workflow, `.github/workflows/ci.yml`, installs the locked dependencies, runs the unit tests and the Gherkin feature, and validates every OpenSpec change and spec in strict mode. Its result appears on the pull request as a [status check](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks), so every reviewer sees the same evidence. Green CI still proves only what its checks assert, which is why the pull request says what the evidence does not prove, as you did in the first exercise of this workshop.
 
-<img width="800" alt="Deliver an approved behavior: five stages in a row. Stage 1, Plan: red tests, reviewed plan, marked Human check. Stage 2, Implement: make the tests pass. Stage 3, Pull request: CI checks every change, marked You are here. Stage 4, Archive: update the living spec. Stage 5, Merge: a person approves, marked Human check." src="../images/delivery-flow-3.png">
+<img width="800" alt="Deliver an approved behavior: five stages in a row. Stage 1, Plan: red tests, reviewed plan, marked Human check. Stage 2, Implement: make the tests pass. Stage 3, Pull request: CI checks every change, marked You are here. Stage 4, Archive: update the living spec. Stage 5, Merge: a person approves, marked Human check." src="https://github.com/acworkma/skills-spec-driven-deliver-a-behavior/blob/main/.github/images/delivery-flow-3.png?raw=true">
 
 ### ⌨️ Activity 1: Collect your evidence
 
@@ -37,7 +37,7 @@ Your code is green in your terminal, @{{ login }}. :green_circle: But "it passes
 
    > 💡 **Tip:** If a **Compare & pull request** banner appears for `implement-dependent-privacy`, you can use it instead.
 
-   <img width="600" alt="A repository page with a yellow banner about a branch with recent pushes and a green Compare and pull request button. The branch name in the screenshot is an example; yours is implement-dependent-privacy." src="../images/compare-pull-request.png">
+   <img width="600" alt="A repository page with a yellow banner about a branch with recent pushes and a green Compare and pull request button. The branch name in the screenshot is an example; yours is implement-dependent-privacy." src="https://github.com/acworkma/skills-spec-driven-deliver-a-behavior/blob/main/.github/images/compare-pull-request.png?raw=true">
 
 1. Give it a short title, such as `Deliver dependent claim privacy`. In the description, write in your own words:
 
