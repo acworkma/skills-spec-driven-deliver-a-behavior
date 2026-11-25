@@ -16,5 +16,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "13.3.0",
     "@fission-ai/openspec": "2.0.0"
+  },
+  "overrides": {
+    "brace-expansion": "5.0.13"
   }
 }
